@@ -1,0 +1,13 @@
+{
+  "raw_icu_stays": 61532,
+  "upstream_cohort_stays": 61532,
+  "upstream_included_stays": 11325,
+  "potential_cases_before_sofa": {
+    "4h": 35,
+    "8h": 18,
+    "12h": 0
+  },
+  "status": "onset_screen_only_sofa_not_yet_computed",
+  "input_hours": 12,
+  "note": "Counts are upper bounds on positive cases before SOFA filtering, not final dataset sizes."
+}

@@ -1,0 +1,90 @@
+{
+  "created_utc": "2026-09-06T16:37:55.905668+00:00",
+  "requested_horizons_hours": [
+    4,
+    8
+  ],
+  "omitted_12h": "User selected feasible 4h/8h datasets after the onset audit found zero 12h cases",
+  "input_hours": 12,
+  "seed": 42,
+  "max_stays": null,
+  "max_chunks": null,
+  "cohort_patients": 11302,
+  "unavailable_horizons": {},
+  "datasets": [
+    {
+      "file": "data/processed/timeseries_before_onset_4h.npz",
+      "horizon_hours": 4,
+      "shape": [
+        5190,
+        12,
+        22
+      ],
+      "patients": 5190,
+      "sepsis3_cases": 29,
+      "controls": 5161,
+      "fraction_missing_after_forward_fill": 0.4390260991417061,
+      "patients_without_any_observed_feature": 7,
+      "prospective_default_split_counts": {
+        "train": 2906,
+        "validation": 727,
+        "test": 1557
+      },
+      "sha256": "c2a9d7e2b21e43cdbf9472a5e9bf1a9ae7de0e7bef37c4e85a02a7ecd3c7a1c1"
+    },
+    {
+      "file": "data/processed/timeseries_before_onset_8h.npz",
+      "horizon_hours": 8,
+      "shape": [
+        4717,
+        12,
+        22
+      ],
+      "patients": 4717,
+      "sepsis3_cases": 14,
+      "controls": 4703,
+      "fraction_missing_after_forward_fill": 0.4357554236449721,
+      "patients_without_any_observed_feature": 6,
+      "prospective_default_split_counts": {
+        "train": 2640,
+        "validation": 661,
+        "test": 1416
+      },
+      "sha256": "f4a19c2c8bc6ed3f82372ba40b1aedeae6107b68546d44a05b00b947916506f1"
+    }
+  ],
+  "status": "complete",
+  "label_definition": "Published sepsis3-mimic cohort; suspected infection and first-day SOFA >=2",
+  "sepsis3_mimic_revision": "384198910524f9bfbaecf898982fc070b70e9bc2",
+  "mimic_code_revision": "7ff270c7079a42621f6e011de6ce4ddc0f7fd45c",
+  "source_code_sha256": {
+    "build_cohort.py": "467456966ab18eaf54b869c90ec45f6467e976d3ad2fe5903387e2490015df50",
+    "build_timeseries.py": "337d6ecb186c04352b8807fb721e428b56439931348ed17a87ae4560d3be3139",
+    "config.py": "f6fb9069503e393509a256bc007c793ad64279b43087cf67bfcf297c88593025"
+  },
+  "label_table_sha256": "3c4fe90443eee4f8370cf0c04a43eb434c005775a247ff0d9abf8c5f0dc65ea9",
+  "raw_source_file_metadata": {
+    "PATIENTS.csv": {
+      "bytes": 2628900,
+      "mtime_ns": 1787124810035751000
+    },
+    "ADMISSIONS.csv": {
+      "bytes": 12548562,
+      "mtime_ns": 1787124420190683000
+    },
+    "ICUSTAYS.csv": {
+      "bytes": 6357077,
+      "mtime_ns": 1787124475762854100
+    },
+    "CHARTEVENTS.csv": {
+      "bytes": 35307895134,
+      "mtime_ns": 1787125576994030600
+    },
+    "LABEVENTS.csv": {
+      "bytes": 1854245647,
+      "mtime_ns": 1787124802200355600
+    }
+  },
+  "imputation": "Within-window forward fill only; remaining NaNs require training-only preprocessing",
+  "finished_utc": "2026-09-06T16:44:50.613715+00:00"
+}
