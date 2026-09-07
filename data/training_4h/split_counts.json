@@ -1,0 +1,17 @@
+{
+  "train": {
+    "patients": 2906,
+    "sepsis3_cases": 16,
+    "controls": 2890
+  },
+  "validation": {
+    "patients": 727,
+    "sepsis3_cases": 4,
+    "controls": 723
+  },
+  "test": {
+    "patients": 1557,
+    "sepsis3_cases": 9,
+    "controls": 1548
+  }
+}

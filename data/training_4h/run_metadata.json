@@ -1,0 +1,36 @@
+{
+  "timeseries_template": "D:\\Profiles\\Nisarga Mridha\\Commisioned Work\\Rumpa\\Dissertation\\Codes\\mimic_iii_horizon_datasets\\data\\processed\\timeseries_before_onset_{horizon}h.npz",
+  "prediction_horizons": [
+    4
+  ],
+  "models": [
+    "rnn",
+    "lstm",
+    "cnn_transformer",
+    "lstm_transformer"
+  ],
+  "epochs": 20,
+  "cv_folds": 5,
+  "batch_size": 128,
+  "learning_rate": 0.001,
+  "hidden_dim": 64,
+  "dropout": 0.2,
+  "test_size": 0.3,
+  "seed": 42,
+  "cpu": true,
+  "started_utc": "2026-09-07T02:14:13.736967+00:00",
+  "dataset_sha256": "c2a9d7e2b21e43cdbf9472a5e9bf1a9ae7de0e7bef37c4e85a02a7ecd3c7a1c1",
+  "dataset_counts": {
+    "patients": 5190,
+    "sepsis3_cases": 29,
+    "controls": 5161
+  },
+  "torch_version": "2.3.0+cpu",
+  "torch_threads": 4,
+  "source_hashes": {
+    "train.py": "ed14f7e1378ccfdf0c1e99ffe3e515882c9660c761f082657c22ff55edc2b480",
+    "models.py": "611b7df65507e0fed07907547a480d81e01aaeb9453af279153c63f0df845581"
+  },
+  "status": "complete",
+  "finished_utc": "2026-09-07T02:18:19.025454+00:00"
+}

@@ -1,0 +1,34 @@
+{
+  "status": "complete",
+  "models": {
+    "rnn": {
+      "test_patients": 1557,
+      "test_sepsis_cases": 9,
+      "checkpoint_sha256": "d2da41a846db31f49d0cdc4158fdfedc3114dbabb25a62eb9ec8233adba6a854",
+      "predictions_reproduced": true,
+      "metrics_recomputed": true
+    },
+    "lstm": {
+      "test_patients": 1557,
+      "test_sepsis_cases": 9,
+      "checkpoint_sha256": "9a779700cf03f8fbaec175a96d30ce1942cceae39e34baeb1102212814b2d40d",
+      "predictions_reproduced": true,
+      "metrics_recomputed": true
+    },
+    "cnn_transformer": {
+      "test_patients": 1557,
+      "test_sepsis_cases": 9,
+      "checkpoint_sha256": "a4e729974c7ca3e89829a4ff0b86b97506f6b8f703156254a91a96d1acc9c41f",
+      "predictions_reproduced": true,
+      "metrics_recomputed": true
+    },
+    "lstm_transformer": {
+      "test_patients": 1557,
+      "test_sepsis_cases": 9,
+      "checkpoint_sha256": "830d5ff38f836a1c4bc92916cbe8c5fed663635dbd38296faab5bc3db4f1d284",
+      "predictions_reproduced": true,
+      "metrics_recomputed": true
+    }
+  },
+  "patient_rows_printed": false
+}
