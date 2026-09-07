@@ -1,0 +1,4 @@
+n_patients: 11302
+n_sepsis3: 5779
+n_non_sepsis3: 5523
+sepsis3_rate: 0.511325429127588
