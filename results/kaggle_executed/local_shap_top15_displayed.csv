@@ -1,0 +1,16 @@
+feature,shap_contribution,absolute_contribution
+bilirubin,0.011478,0.011478
+temperature_c,0.010658,0.010658
+sbp,0.006843,0.006843
+hematocrit,0.004278,0.004278
+wbc,0.00406,0.00406
+potassium,0.00288,0.00288
+heart_rate,0.002645,0.002645
+ph,-0.001174,0.001174
+creatinine,0.0,0.0
+bun,0.0,0.0
+glucose,0.0,0.0
+dbp,0.0,0.0
+inr,0.0,0.0
+hemoglobin,0.0,0.0
+platelets,0.0,0.0
