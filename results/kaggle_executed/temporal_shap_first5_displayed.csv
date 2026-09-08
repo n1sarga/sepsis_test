@@ -1,0 +1,6 @@
+prefix_hour,feature,shap_contribution,absolute_contribution
+1,bilirubin,0.0,0.0
+1,bun,0.0,0.0
+1,creatinine,7.4e-05,7.4e-05
+1,dbp,-0.000123,0.000123
+1,glucose,-0.000181,0.000181
