@@ -1,0 +1,7 @@
+Cell 40: RuntimeError: No Transformer attention weights were captured.
+
+Cell 41: NameError: name 'mean_attention' is not defined
+
+Cell 42: NameError: name 'mean_attention' is not defined
+
+These errors occurred after the attention extractor reported `Attention maps captured: 0`. As a result, attention_matrix.csv and attention_hour_importance.csv were not generated in the executed Kaggle run.
