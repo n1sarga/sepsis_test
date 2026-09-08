@@ -1,0 +1,2 @@
+horizon,model,subject_id,icustay_id,true_label,predicted_probability
+4,lstm_transformer,63173,267801,1,0.397471
