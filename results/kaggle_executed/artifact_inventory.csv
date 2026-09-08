@@ -1,0 +1,13 @@
+file,exists,size_kb
+model_metrics.csv,True,1.41
+heldout_predictions.csv,True,445.44
+cross_validation_metrics.csv,True,6.54
+cross_validation_summary.csv,True,3.12
+bootstrap_confidence_intervals.csv,True,1.63
+xai_case.csv,True,0.12
+local_shap_feature_contributions.csv,True,0.65
+local_shap_hour_feature_matrix.csv,True,1.45
+temporal_shap.csv,True,7.63
+attention_matrix.csv,False,
+attention_hour_importance.csv,False,
+dashboard_manifest.json,True,0.37
