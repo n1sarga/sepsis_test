@@ -1,0 +1,40 @@
+name: Update experiment notebook imbalance analysis
+
+on:
+  push:
+    paths:
+      - 'scripts/update_experiment_imbalance.py'
+      - '.github/workflows/update-experiment-imbalance.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  update-notebook:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install nbformat
+        run: pip install nbformat
+
+      - name: Update experiment notebook
+        run: python scripts/update_experiment_imbalance.py
+
+      - name: Commit updated notebook
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add notebooks/MIMICIII_Sepsis3_Experiment_Kaggle.ipynb
+          if git diff --cached --quiet; then
+            echo "No notebook changes"
+          else
+            git commit -m "Add Zhang class-weight imbalance comparison to experiment notebook"
+            git push
+          fi
